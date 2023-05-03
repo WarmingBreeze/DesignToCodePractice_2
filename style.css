@@ -1,5 +1,6 @@
 :root {
-    --clr-background: 30, 38%, 92%;
+    --clr-body-bg: 30, 38%, 92%;
+    --clr-container-bg: 0, 0%, 100%;
 }
 
 *,
@@ -17,27 +18,31 @@ img,
 svg {
     display: block;
     max-width: 100%;
+    
 }
 
 body {
-    background-color: hsl(var(--clr-background));
+    background-color: hsl(var(--clr-body-bg));
 }
 
 @media (min-width: 600px) {
     body {
         display: grid;
         place-items: center;
+        min-height: 100vh;
     }
 }
 
-.card {
+.container {
     max-width: 46rem;
     display: grid;
-    border-radius: .5rem;
+    border-radius: 1rem;
+    background-color: hsl(var(--clr-container-bg));
+    overflow: hidden;
 }
 
 @media (min-width: 600px) {
-    .card {
+    .container {
         grid-template-columns: 1fr 1fr;
     }
 }
