@@ -1,6 +1,23 @@
 :root {
     --clr-body-bg: 30, 38%, 92%;
     --clr-container-bg: 0, 0%, 100%;
+    --clr-button-bg: 158, 36%, 37%;
+    --clr-button-hover: #1A4032;
+    --clr-heading: 212, 21%, 14%;
+    --clr-text: #6c7289;
+
+
+    --font-family-main: 'Montserrat';
+    --font-family-display: 'Fraunces';
+
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    --fs-12: 12px;
+    --fs-13: 13px;
+    --fs-14: 14px;
+    --fs-32: 32px;
+
 }
 
 *,
@@ -23,6 +40,9 @@ svg {
 
 body {
     background-color: hsl(var(--clr-body-bg));
+    font-family: var(--font-family-main);
+    font-weight: var(--fw-medium);
+
 }
 
 @media (min-width: 600px) {
@@ -33,6 +53,24 @@ body {
     }
 }
 
+.button {
+    background-color: hsl(var(--clr-button-bg));
+    border: 0;
+    border-radius: .5rem;
+    font-size: var(--fs-14);
+    color: hsl(var(--clr-container-bg));
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus-visible {
+    background-color: var(--clr-button-hover);
+}
 .container {
     max-width: 46rem;
     display: grid;
@@ -46,3 +84,48 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+.grid-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem;
+}
+
+.category {
+    color: var(--clr-text);
+}
+
+.product-name {
+    font-family: var(--font-family-display);
+    font-size: var(--fs-32);
+    font-weight: var(--fw-bold);
+}
+
+.product-details {
+    color: var(--clr-text);
+}
+
+.prices {
+    display: flex;
+    place-items: center;
+    gap: 2rem;
+}
+
+.original-price {
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-13);
+    color: var(--clr-text);
+    line-height: 23px;
+    text-decoration: line-through;
+}
+
+.special-price {
+    font-family: var(--font-family-display);
+    font-size: var(--fs-32);
+    font-weight: var(--fw-bold);
+    line-height: var(--fs-32);
+    color: hsl(var(--clr-button-bg));
+    text-decoration: none;
+}
+
