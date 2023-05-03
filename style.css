@@ -1,0 +1,43 @@
+:root {
+    --clr-background: 30, 38%, 92%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+    margin: 0;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background-color: hsl(var(--clr-background));
+}
+
+@media (min-width: 600px) {
+    body {
+        display: grid;
+        place-items: center;
+    }
+}
+
+.card {
+    max-width: 46rem;
+    display: grid;
+    border-radius: .5rem;
+}
+
+@media (min-width: 600px) {
+    .card {
+        grid-template-columns: 1fr 1fr;
+    }
+}
