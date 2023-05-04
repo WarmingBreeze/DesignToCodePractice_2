@@ -37,7 +37,6 @@ img,
 svg {
     display: block;
     max-width: 100%;
-    
 }
 
 body {
@@ -59,7 +58,7 @@ body {
     background-color: hsl(var(--clr-button-bg));
     border: 0;
     border-radius: .5rem;
-    font-size: var(--fs-15);
+    font-size: var(--fs-14);
     font-weight: var(--fw-bold);
     line-height: auto;
     color: hsl(var(--clr-container-bg));
@@ -76,7 +75,7 @@ body {
     background-color: var(--clr-button-hover);
 }
 .container {
-    max-width: 46rem;
+    max-width: 37.5rem;
     display: grid;
     border-radius: 1rem;
     background-color: hsl(var(--clr-container-bg));
@@ -92,14 +91,14 @@ body {
 .grid-flow {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.2rem;
     padding: 1.5rem;
 }
 
 @media (min-width: 600px) {
     .grid-flow {
-        padding: 2.5rem;
-        gap: 2rem;
+        padding: 2rem;
+        gap: 1.2rem;
     }
 }
 
@@ -125,7 +124,7 @@ body {
 
 .product-details {
     line-height: 1.7;
-    font-size: var(--fs-15);
+    font-size: var(--fs-14);
     color: var(--clr-text);
 }
 
@@ -138,7 +137,7 @@ body {
 .prices {
     display: flex;
     place-items: center;
-    gap: 2rem;
+    gap: 1.2rem;
 }
 
 .original-price {

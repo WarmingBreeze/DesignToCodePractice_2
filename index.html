@@ -16,7 +16,11 @@
 </head>
 <body>
   <div class="container">
-    <img src="./images/image-product-desktop.jpg" alt="Perfume Picture">
+    <picture>
+      <source srcset="./images/image-product-desktop.jpg" media="(min-width: 600px)">
+      <img src="./images/image-product-mobile.jpg" alt="Perfume Picture">
+    </picture>
+    
     <div class="grid-flow">
       <h2 class="category">Perfume</h2>
       <h1 class="product-name">Gabrielle Essence Eau De Parfum</h1>
