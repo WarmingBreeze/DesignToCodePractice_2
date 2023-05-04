@@ -16,6 +16,8 @@
     --fs-12: 0.75rem;
     --fs-13: .8125rem;
     --fs-14: .875rem;
+    --fs-15: .9375rem;
+    --fs-16: 1rem;
     --fs-32: 2rem;
 
 }
@@ -57,7 +59,7 @@ body {
     background-color: hsl(var(--clr-button-bg));
     border: 0;
     border-radius: .5rem;
-    font-size: var(--fs-14);
+    font-size: var(--fs-15);
     font-weight: var(--fw-bold);
     line-height: auto;
     color: hsl(var(--clr-container-bg));
@@ -123,7 +125,7 @@ body {
 
 .product-details {
     line-height: 1.7;
-    font-size: var(--fs-14);
+    font-size: var(--fs-15);
     color: var(--clr-text);
 }
 
